@@ -1,0 +1,53 @@
+body {
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: wheat;
+}
+h1 {
+    font-size: 3rem;
+    font-family: cursive;
+    font-style: italic;
+}
+.slider-container {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+.image-container {
+    display: flex;
+    transition: transform .4s ease-in-out;
+}
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+    cursor: pointer;
+}
+.btn.prev {
+    left: 10px;
+}
+.btn.next {
+    right: 10px;
+}
+.btn:hover {
+    opacity: 90%;
+}
